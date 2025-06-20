@@ -1,6 +1,3 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { IoPlayCircleOutline } from "react-icons/io5";
 import './Movies.css'
 
 function Movies() {
