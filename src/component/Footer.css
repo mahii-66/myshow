@@ -1,0 +1,62 @@
+/* .color {
+    height: 450px;
+} */
+.move {
+    margin-top: 140px;
+    position: absolute;
+    color: white;
+    margin-left: -260px;
+    font-size: 18px;
+}
+.color1 {
+    margin-top: -20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 26px;
+}
+.color2 {
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+.foot {
+    color: white;
+    text-decoration: none;
+}
+.foot:hover {
+    color: rgb(234, 40, 72);
+    text-decoration:underline;
+}
+.buttonf {
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.495);
+    border-color: white;
+}
+.buttonp {
+    color: white;
+}
+.last {
+    background-color: rgba(98, 73, 73, 0.249);
+    height: 40px;
+    color: rgba(255, 255, 255, 0.614);
+   
+}
+.last1 {
+    margin-left:4%;
+    position: absolute;
+    margin-top: 10px;
+}
+.input11 {
+    border: 2px solid rgb(197, 36, 63);
+    border-radius: 10px;
+    height: 40px;
+    background-color: black;
+    width: 140px;
+}
+.color11 {
+    color: white;
+}

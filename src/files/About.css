@@ -1,0 +1,27 @@
+.pics {
+    width: 54%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.h4 {
+    /* style={{marginTop:80}} */
+    margin-top: 80px;
+    margin-left: 740px;
+    margin-top: -200px;
+}
+.p22 {
+    /* style={{marginTop:10}} */
+    margin-top: 10px;
+    margin-left: 740px;
+}
+.p11 {
+    border-radius: 8px;
+    border-color: red;
+    width: 140px;
+    height: 36px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    margin-left: 740px;
+
+}
