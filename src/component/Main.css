@@ -65,19 +65,19 @@ body {
    border-radius: 10px;
 }
 .slide {
-  background-image: url('https://images.alphacoders.com/100/thumb-1920-1002901.jpg ');
+  background-image: url('https://wallpapers.com/images/featured/avengers-vm16xv4a69smdauy.webp');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slide1 {
-  background-image: url('https://myshowz.infinityfreeapp.com/assets/images/banner2.jpg');
+.slide1{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/853/678/361/justice-league-movies-4k-2017-movies-wallpaper-preview.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slide2 {
-  background-image: url('https://myshowz.infinityfreeapp.com/assets/images/banner4.jpg');
+  background-image: url('https://i.pinimg.com/736x/5c/df/c7/5cdfc7b6ac2dc26ab5d79b39aa2b4ef3.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,10 +105,12 @@ body {
   border: none;
   /* background-color: #222; */
   border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
   color: white;
   margin: auto;
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
 .movie-img {
@@ -234,7 +236,19 @@ body {
  
 } */
        
+.play {
+  background-color: #fff;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  animation: pulse 1s infinite;
+  border-radius: 30px;
+  border: 0px;
+  
+}
 
+.play i {
+   font-size: 24px;
+}
 
 
 @media (max-width: 576px) {
@@ -250,5 +264,16 @@ body {
   .border22 {
     font-size: 14px;
     padding: 4px 8px;
+  }
+  
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 30px rgb(11, 163, 8);
+
+  }
+  100% {
+    box-shadow:0 0 0 12px  rgb(18, 154, 131);
+
   }
 }

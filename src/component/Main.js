@@ -201,25 +201,30 @@ const Products=[
   }}
 >
   {[
-    { title: 'Latest Movie Trailers', movie: 'Avengers' },
-    { title: 'Latest Online Movies', movie: 'Frozen' },
-    { title: 'Latest Online Movies', movie: 'Aladdin' },
-    { title: 'Latest Online Movies', movie: 'Avatar' },
+    { title: 'Latest Movie Trailers', movie: 'Avengers',trailer:"Watch Trailer"},
+    { title: 'Latest Online Movies', movie: 'Justice League',trailer:"Watch Trailer" },
+    { title: 'Latest Online Movies', movie: 'Deadpool',trailer:"Watch Trailer" },
+    { title: 'Latest Online Movies', movie: 'Avatar',trailer:"Watch Trailer" },
   ].map((item, index) => (
     <SwiperSlide key={index} className={`slide slide${index}`}>
       <div className="movie-card">
-        <b>{item.title}</b>
-        <p className="movie-name">The movie is "{item.movie}"</p>
-        <button className="play-button">
-          <IoIosPlay className="play-icon" />
+        <b style={{marginLeft:-40,fontSize:22}}>{item.title}</b>
+        <p style={{marginLeft:-40}} className="movie-name">The movie is "{item.movie}"</p>
+        <button style={{marginLeft:-20,borderRadius:40,border:0,fontSize:24,marginTop:20}} className="play">
+          {/* <IoIosPlay style={{marginTop:-5,marginLeft:2,color:' rgb(185, 24, 96)'}} className="play-icon"/> */}
+          <i><IoIosPlay style={{marginTop:-5,marginLeft:2,color:' rgb(185, 24, 96)'}} /></i>
+
         </button>
+        {/* <button className='play'>
+          <i><IoIosPlay style={{marginTop:-5,marginLeft:2,color:' rgb(185, 24, 96)'}} /></i>
+        </button> */}
+        <b style={{marginLeft:8,marginTop:5,position:'absolute'}}>{item.trailer}</b>
       </div>
     </SwiperSlide>
   ))}
 </Swiper>
 
 	    <section className='mt-5'>
-       
         <div className="container mb-4">
   <div className="row align-items-center">
     <div className="col-12 d-flex justify-content-between flex-wrap">
@@ -297,56 +302,6 @@ const Products=[
        
       </section>
      
- 
-{/* <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-      loop={true}
-      autoplay={{
-        delay:2500,
-        disableOnInteraction:false,
-      }}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Autoplay,Pagination]}
-        className="mySwiper"
-      >  
-        {
-          Product.map((pro)=>(
-            <SwiperSlide key={pro.id}>
-              <div style={{width:240,border:0 }} className='card'>
-            
-            
-                <img src={pro.img} style={{height:280, width:240,borderRadius:8}} alt='mahi'/>
-
-              <b>{pro.name}</b>
-              <p>{pro.name1}</p>
-              <button className='border1'>{pro.text}</button>
-              <button className='border2'>{pro.text8}</button>
-              <a href='###' style={{position:'absolute',marginTop:120,marginLeft:76,fontSize:50, color:'white'}}>{pro.text1}</a>
-              <p style={{marginTop:240, position:'absolute', marginLeft:10, color:'white'}}>{pro.text6}</p>
-              <p style={{marginTop:244, position:'absolute', marginLeft:32, color:'white', fontSize:15}}>{pro.text7}</p>
-              </div>
-             
-         </SwiperSlide>
-          ))    
-        }
-      </Swiper> */}
       
      
 <Swiper
