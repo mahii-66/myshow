@@ -1,62 +1,82 @@
-/* .color {
-    height: 450px;
-} */
-.move {
-    margin-top: 140px;
-    position: absolute;
-    color: white;
-    margin-left: -260px;
-    font-size: 18px;
+.footer {
+  background-color: rgba(0, 0, 0, 0.945);
+  color: #fff;
+  padding: 30px 20px;
 }
-.color1 {
-    margin-top: -20px;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    margin-top: 26px;
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
 }
-.color2 {
-    text-decoration: none;
-    color: white;
-    gap: 10px;
+
+.footer-top img {
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.279);
 }
-.foot {
-    color: white;
-    text-decoration: none;
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
 }
-.foot:hover {
-    color: rgb(234, 40, 72);
-    text-decoration:underline;
+
+.footer-links h1 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.buttonf {
-    width: 180px;
-    height: 50px;
-    border-radius: 8px;
-    background-color: black;
-    color: rgba(255, 255, 255, 0.495);
-    border-color: white;
+
+.footer-links a {
+  display: block;
+  color: #888888;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: color 0.3s;
 }
-.buttonp {
-    color: white;
+
+.footer-links a:hover {
+  color: rgb(191, 24, 88);
+  text-decoration: underline;
 }
-.last {
-    background-color: rgba(98, 73, 73, 0.249);
-    height: 40px;
-    color: rgba(255, 255, 255, 0.614);
-   
+
+.footer-links input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
 }
-.last1 {
-    margin-left:4%;
-    position: absolute;
-    margin-top: 10px;
+
+.footer-links p {
+  color: #aaa;
+  font-size: 14px;
 }
-.input11 {
-    border: 2px solid rgb(197, 36, 63);
-    border-radius: 10px;
-    height: 40px;
-    background-color: black;
-    width: 140px;
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
 }
-.color11 {
-    color: white;
+
+.footer-bottom p {
+  color: #aaa;
+  font-size: 14px;
+
+}
+
+.textiz {
+    margin-left: 20px;
+}
+.textiz1 {
+  text-align: center;
+ margin-left: -20px;
+ font-size: 18px;
+}
+.textiz:hover {
+  color: rgb(191, 24, 88);
 }

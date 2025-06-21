@@ -3,7 +3,7 @@
     width: 80%;
     border-radius: 10px;
     box-shadow: 2px 5px 16px rgb(219, 8, 11);
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 .pic:hover {
     box-shadow: 2px 5px 16px rgb(14, 231, 115);
@@ -12,46 +12,46 @@
     width: 80%;
     border-radius: 10px;
     box-shadow: 2px 5px 16px rgb(219, 8, 11);
-    margin-left: -5%;
+    /* margin-left: -5%; */
 
     
 }.pic2{
     width: 80%;
     border-radius: 10px;
     box-shadow: 2px 5px 16px rgb(219, 8, 11);
-    margin-left: 5%;
+    /* margin-left: 5%; */
 
 }.pic3{
     width: 80%;
     border-radius: 10px;
     box-shadow: 2px 5px 16px rgb(219, 8, 11);
-    margin-left: -5%;
+    /* margin-left: -5%; */
 }
 .pic11 {
-    width: 240px;
+    width: 220px;
     border-radius: 10px;
     height: 320px;
     box-shadow: 2px 5px 10px blueviolet;
 
 }
 .pic12 {
-    width: 240px;
+    width: 220px;
     border-radius: 10px;
     height: 320px;
     box-shadow: 2px 5px 10px blueviolet;
 
 }.pic13 {
-    width: 240px;
+    width: 220px;
     border-radius: 10px;
     height: 320px;
     box-shadow: 2px 5px 10px blueviolet;
 
 }.pic14 {
-    width: 240px;
+    width: 220px;
     border-radius: 10px;
     height: 320px;
     box-shadow: 2px 5px 10px blueviolet;
 }
 .section1 {
-    margin-left: 6%;
+    margin-left: 7%;
 }

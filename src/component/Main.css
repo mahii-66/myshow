@@ -7,8 +7,7 @@ body {
   height: 100%;
 }
 
-body {
-  /* background: #00000076; */
+/* body {
   font-family:
     Helvetica Neue,
     Helvetica,
@@ -18,12 +17,11 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-}
+} */
 
 .swiper {
   width: 100%;
-  height: 100%;
-  /* background: #000; */
+
 }
 
 .swiper-slide {
@@ -34,47 +32,21 @@ body {
   padding: 40px 60px;
 }
 
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
 
-.swiper-slide .title {
-  font-size: 41px;
-  font-weight: 300;
-}
-
-.swiper-slide .subtitle {
-  font-size: 21px;
-}
-
-.swiper-slide .text {
-  font-size: 14px;
-  max-width: 400px;
-  line-height: 28;
-}
-
-.show {
+/* .show {
   text-decoration: none;
   font-size: 20px;
   color: black;
   margin-left: 80%;
-  /* margin-top: ; */
-}
-.show:hover {
+} */
+/* .show:hover {
   color: crimson;
 }
 
 .link {
   margin-left: 80%;
  
-}
+} */
 .border1{
  
    color:  #127681;
@@ -85,39 +57,12 @@ body {
 
 }
 .border2{
-  margin-top: 10px;
+   margin-top: 10px;
    color:  #811212;
    border-radius: 10;
-  background-color: white;
+   background-color: white;
    border-color: #d10d0d;
    border-radius: 10px;
-
-}
-
-
-.SwiperSlide .slider {
-   background-image: 'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE='; 
-  
-              
-         
-}
-.show1 {
-  margin-left: 70%;
-  margin-top: -32px;
-  font-size: 20px;
-}
-
-.show1 a {
-  color: rgb(233, 8, 45);
-  text-decoration: none;
-  font-weight: bolder;
-
-   
-}
-.show1:hover {
-  text-decoration: underline;
-  color: rgb(233, 8, 45);
-
 }
 .slide {
   background-image: url('https://images.alphacoders.com/100/thumb-1920-1002901.jpg ');
@@ -136,4 +81,174 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.slide3 {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.show1 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+
+.movie-card {
+  width: 240px;
+  border: none;
+  /* background-color: #222; */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  margin: auto;
+}
+
+.movie-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.movie-info {
+  padding: 10px;
+  margin-top: -110px;
+}
+.movie-info:hover {
+   transform:translate(0px,-20px);
+   transition: 0.5s;
+}
+
+.movie-extra {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .movie-card {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+.product-card {
+  width: 350%;
+  max-width: 240px;
+  /* background-color: #222; */
+  border-radius: 8px;
+  overflow: hidden;
+  color:black;
+  position: relative;
+  margin: auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  /* box-shadow: 2px 2px 4px; */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.product-info b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.border11,
+.border22 {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  border: 2px solid #0a6983;
+  border-radius: 4px;
+  background: transparent;
+  color:#1b768f;
+  cursor: pointer;
+  width: 100%;
+}
+.border11:hover,
+.border22:hover {
+  background-color: #0e6e88;
+  color: white;
+   transition: 0.5s;
+}
+
+/* .text6 {
+  margin-top: -275px;
+  color: white;
+  position: absolute;
+  transition: 2s;
+}
+
+.text7 {
+  font-size: 15px;
+  color: white;
+  margin-top: -270px;
+  position: absolute;
+ 
+} */
+       
+
+
+
+@media (max-width: 576px) {
+  .overlay-text {
+    font-size: 30px;
+  }
+
+  .product-info {
+    padding: 8px;
+  }
+
+  .border11,
+  .border22 {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
 }

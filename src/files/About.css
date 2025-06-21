@@ -3,14 +3,9 @@
     margin-top: 30px;
     border-radius: 10px;
 }
-.h4 {
-    /* style={{marginTop:80}} */
-    margin-top: 80px;
-    margin-left: 740px;
-    margin-top: -200px;
-}
-.p22 {
-    /* style={{marginTop:10}} */
+
+/* .p22 {
+ 
     margin-top: 10px;
     margin-left: 740px;
 }
@@ -24,4 +19,8 @@
     margin-top: 10px;
     margin-left: 740px;
 
+} */
+.abouts {
+    margin-top: -10%;
+    margin-left: 55%;
 }

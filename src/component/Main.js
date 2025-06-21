@@ -124,27 +124,27 @@ export default function App() {
 const Products=[
     {
       id:1,
-      img :"https://myshowz.infinityfreeapp.com/assets/images/wednesday.jpeg"  ,
+      img :"https://c.ndtvimg.com/gws/ms/movies-with-the-most-oscar-wins/assets/2.jpeg?1727706937"  ,
       text2 : <IoPlayCircleOutline />,
-      text3 : "A Wednesday",
+      text3 : "TITANIC",
       text4 :<LuClock8 />,
       text5 :"1 Hr 4min"
 
     },
     {
       id:2,
-      img:"https://myshowz.infinityfreeapp.com/assets/images/commando2.jpeg",
+      img:"https://movietomorrow.com/wp-content/uploads/2025/03/captain-america-brave-new-world.jpg",
       text2 : <IoPlayCircleOutline />,
-      text3 : "Commando-3",
+      text3 : "CAPTAIN AMERICA",
       text4 :<LuClock8 />,
       text5 :"1 Hr 4min"
       
     },
     {
       id:3,
-      img:"https://myshowz.infinityfreeapp.com/assets/images/gujju2.jpeg",
+      img:"https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Spider-Man_3%2C_International_Poster.jpg/250px-Spider-Man_3%2C_International_Poster.jpg",
       text2 : <IoPlayCircleOutline />,
-      text3 : "Gujjubhai Most Wanted",
+      text3 : "Spider Man-3",
       text4 :<LuClock8 />,
       text5 :"1 Hr 4min"
 
@@ -152,9 +152,9 @@ const Products=[
     },
     {
       id:4,
-      img:"https://myshowz.infinityfreeapp.com/assets/images/avtar-2.jpeg",
+      img:"https://lionsgate.brightspotcdn.com/cc/c7/2e701ac14a22a2e3d81e292b3c80/john-wick-chapter-2-movies-poster-01.jpg",
       text2 : <IoPlayCircleOutline />,
-      text3 : "Avatar",
+      text3 : "John Wick-2",
       text4 :<LuClock8 /> ,
       text5 :"1 Hr 4min"
 
@@ -168,152 +168,137 @@ const Products=[
   return (
     <>
 
-      <Swiper
-        // style={{
-        //   '--swiper-navigation-color': '#fff',
-        //   '--swiper-pagination-color': '#fff',
-        // }}
-        // speed={600}
-        // parallax={true}
-        slidesPerView={'2'}
-        centeredSlides={true}
-        loop={true}
-        spaceBetween={20}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[ Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <div
-          data-swiper-parallax="-23%"
-        ></div>
-        <SwiperSlide className='slide'>
-          <div className="title" data-swiper-parallax="-300">
-            <div className='row'>
-            <div className='col'>
-
-            <b>Latest Movie Trailers</b>
-           <p style={{fontSize:16,color:' rgb(255, 255, 255)'}}>The movie is "Avengers"</p>
-             
-           {/* <p style={{fontSize:16,color:' rgba(255, 255, 255, 0.88)'}}>The movie "Aladin" (2019), directed by  <br/>Sujoy Ghosh,is a Bollywood fantasy  <br/> film that reimagines the classic  <br/>tale  of Aladdin.</p> */}
-           <button style={{width:38,height:36,borderRadius:50,border:0}}><IoIosPlay style={{marginTop:-34,fontSize:26,marginLeft:1,color:'rgb(250, 0, 42)'}} /></button>
-          </div>
-          </div>
-          </div>
-         
-        </SwiperSlide>
 
 
-        <SwiperSlide className='slide1'>
-            <div className='row'>
-            <div className='col'>
-            
-          <div className="title" data-swiper-parallax="-300">
-            <b>Latest Online movies</b>
-           <p style={{fontSize:16,color:' rgba(255, 255, 255, 0.88)'}}>The movie is"Frozon"</p>
-           <button style={{width:38,height:36,borderRadius:50,border:0}}><IoIosPlay style={{marginTop:-34,fontSize:26,marginLeft:1,color:'rgb(250, 0, 42)'}} /></button>
-          </div>
-          </div>
-          </div>
-    
-        </SwiperSlide>
-        <SwiperSlide className='slide2'>
-            <div className='row'>
-            <div className='col'>
-          <div className="title" data-swiper-parallax="-300">
-           <b>Latest Online movies</b>
-           <p style={{fontSize:16,color:' rgba(255, 255, 255, 0.88)'}}>The movie is "Aladin"</p>
-           <button style={{width:38,height:36,borderRadius:50,border:0}}><IoIosPlay style={{marginTop:-34,fontSize:26,marginLeft:1,color:'rgb(250, 0, 42)'}} /></button>
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-            .
-            </p>
-          </div>
-          </div>
-          </div>
-        </SwiperSlide>
-      </Swiper> 
-
-
-
-
-
+<Swiper
+  slidesPerView={3}
+  centeredSlides={true}
+  loop={true}
+  spaceBetween={20}
+  pagination={{
+    clickable: true,
+  }}
+  navigation={true}
+  modules={[Pagination, Navigation]}
+  className="mySwiper"
+  breakpoints={{
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  }}
+>
+  {[
+    { title: 'Latest Movie Trailers', movie: 'Avengers' },
+    { title: 'Latest Online Movies', movie: 'Frozen' },
+    { title: 'Latest Online Movies', movie: 'Aladdin' },
+    { title: 'Latest Online Movies', movie: 'Avatar' },
+  ].map((item, index) => (
+    <SwiperSlide key={index} className={`slide slide${index}`}>
+      <div className="movie-card">
+        <b>{item.title}</b>
+        <p className="movie-name">The movie is "{item.movie}"</p>
+        <button className="play-button">
+          <IoIosPlay className="play-icon" />
+        </button>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
 	    <section className='mt-5'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col col-sm-12'>
-              <h1 style={{fontSize:26, color:'black',fontWeight:'bold'}}>Popular movies </h1>
-              
-              <h1 className='show1'><a href='https://myshowz.infinityfreeapp.com/movies.html'> Show All </a></h1>
-              
-            
-
-          
-          </div>
-           
-            </div>
-        </div> <br></br><br></br>
-
-        <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Autoplay,Pagination]}
-        className="mySwiper"
-      >
-        {
-          Products.map((pro1)=>(
-            <SwiperSlide key={pro1.id}>
-              <div  style={{width:240,border:0 }} className='card'>
-                <img src={pro1.img}style={{width:240, height:300, borderRadius:10,}} alt='mahi'/>
-                {/* <p>{pro1.text2}</p> */}
-                <a href='###' style={{position:'absolute',marginTop:120,marginLeft:92,fontSize:50, color:'white'}}>{pro1.text2}</a>
-                <b style={{marginTop:-60, color:'white',marginLeft:10}}>{pro1.text3}</b>
-                <p style={{color:'white', marginLeft:10}}>{pro1.text4}</p>
-                <p style={{marginTop:-40, marginLeft:30, color:'white', fontSize:16}}>{pro1.text5}</p>               
-              </div>
-         </SwiperSlide>
-          ))    
-        }
-      </Swiper>
+       
+        <div className="container mb-4">
+  <div className="row align-items-center">
+    <div className="col-12 d-flex justify-content-between flex-wrap">
+      <h1 style={{ fontSize: 26, color: 'black', fontWeight: 'bold' ,marginTop:10}}>
+        Popular Movies
+      </h1>
+      <h1 className="show1 mt-2 mt-md-0 ">
+        <a href="https://myshowz.infinityfreeapp.com/movies.html">Show All</a>
+      </h1>
+    </div>
+  </div>
+</div>
+        
+      
+      
+      <Swiper
+  slidesPerView={1}
+  spaceBetween={10}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  }}
+  modules={[Autoplay, Pagination]}
+  className="mySwiper"
+>
+  {Products.map((pro1) => (
+    <SwiperSlide key={pro1.id}>
+      <div className="movie-card">
+        <img
+          src={pro1.img}
+          alt="mahi"
+          className="movie-img"
+        />
+        <a href="###" className="overlay-text">
+          {pro1.text2}
+        </a>
+        <div className="movie-info p-2">
+          <p style={{marginTop:40,position:'absolute',fontSize:16,}}>{pro1.text3}</p>
+          <p style={{marginTop:66}}>{pro1.text4}</p>
+          <p style={{marginTop:-42}} className="movie-extra mx-4 ">{pro1.text5}</p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
       </section>
      
      
  <section className='mt-5'>
-        <div className='container'>
-          <div className='row justify-content-md-center'>
-            <div className='col col-sm-12'>
-              <h1 style={{fontSize:26, color:'black',fontWeight:'bold'}}>New Releases</h1>
-              <h1 className='show1'><a href='https://myshowz.infinityfreeapp.com/movies.html'> Show All </a></h1>
-
-            </div>
-           
-          </div>
-        </div> <br></br><br></br>
+       
+         <div className="container mb-4">
+  <div className="row align-items-center">
+    <div className="col-12 d-flex justify-content-between flex-wrap">
+      <h1 style={{ fontSize: 26, color: 'black', fontWeight: 'bold' ,marginTop:10}}>
+        New Releases
+      </h1>
+      <h1 className="show1 mt-2 mt-md-0 ">
+        <a href="https://myshowz.infinityfreeapp.com/movies.html">Show All</a>
+      </h1>
+    </div>
+  </div>
+</div>
 
        
       </section>
      
  
-<Swiper
+{/* <Swiper
         slidesPerView={1}
         spaceBetween={10}
       loop={true}
@@ -361,10 +346,60 @@ const Products=[
          </SwiperSlide>
           ))    
         }
-      </Swiper>
+      </Swiper> */}
       
      
-
+<Swiper
+  slidesPerView={1}
+  spaceBetween={10}
+  loop={true}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  }}
+  modules={[Autoplay, Pagination]}
+  className="mySwiper"
+>
+  {Product.map((pro) => (
+    <SwiperSlide key={pro.id}>
+      <div className="product-card">
+        <div className="image-container">
+          <img
+            src={pro.img}
+            alt="movie"
+            className="product-image"
+          />
+          <a href="###" className="overlay-text">{pro.text1}</a>
+        </div>
+        <div className="product-info">
+          <b>{pro.name}</b>
+          <p>{pro.name1}</p>
+          <button className="border11">{pro.text}</button>
+          <button className="border22">{pro.text8}</button>
+          {/* <p className="text6">{pro.text6}</p>
+          <p className="text7 mx-4">{pro.text7}</p> */}
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
 
    

@@ -2,208 +2,77 @@
 import "./Footer.css";
 
 import React from "react";
-// import { MdOutlineMailOutline } from "react-icons/md";
+
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { IoLogoGoogleplus } from "react-icons/io";
+
 function Footer() {
   return (
-    <>
-      <section className="bg-black">
-        <div className="container">
-          <div className="row">
-            <div className="col mt-5">
-              <img
-                src="https://myshowz.infinityfreeapp.com/assets/images/banner1.jpg" alt='mahi'
-                style={{ width: 260, borderRadius: 10 }}
-              />
-            </div>
-            <div className="col mt-5">
-              <img
-                src="https://myshowz.infinityfreeapp.com/assets/images/banner2.jpg" alt='mahi'
-                style={{ width: 260, borderRadius: 10 }}
-              />
-            </div>
-            <div className="col mt-5">
-              <img
-                src="https://myshowz.infinityfreeapp.com/assets/images/banner3.jpg" alt='mahi'
-                style={{ width: 260, borderRadius: 10 }}
-              />
-            </div>
-            <div className="col mt-5">
-              <img
-                src="https://myshowz.infinityfreeapp.com/assets/images/banner4.jpg" alt='mahi'
-                style={{ width: 260, borderRadius: 10 }}
-              />
-            </div>
+    <section className="footer">
+      <div className="footer-top">
+        <img src="https://myshowz.infinityfreeapp.com/assets/images/banner1.jpg" alt="mahi" />
+        <img src="https://myshowz.infinityfreeapp.com/assets/images/banner2.jpg" alt="mahi" />
+        <img src="https://myshowz.infinityfreeapp.com/assets/images/banner3.jpg" alt="mahi" />
+        <img src="https://myshowz.infinityfreeapp.com/assets/images/banner4.jpg" alt="mahi" />
+      </div>
+
+      <div className="footer-links">
+        <div>
+          <h1>Movies</h1>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">Movies</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">Videos</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">English Movies</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">Tailor</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">Upcoming Movies</a>
+          <a href="https://myshowz.infinityfreeapp.com/Contact_Us.html">Contact Us</a>
+        </div>
+
+        <div>
+          <h1>Information</h1>
+          <a href="https://myshowz.infinityfreeapp.com/index.html">Home</a>
+          <a href="https://myshowz.infinityfreeapp.com/about.html">About</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">TV Series</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html#">Blog</a>
+          <a href="https://myshowz.infinityfreeapp.com/sign_in.html">Login</a>
+          <a href="https://myshowz.infinityfreeapp.com/Contact_Us.html">Contact</a>
+        </div>
+
+        <div>
+          <h1>Locations</h1>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">Asia</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">France</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">Taiwan</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">United States</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">Korea</a>
+          <a href="https://myshowz.infinityfreeapp.com/movies.html">United kingdom</a>
+        </div>
+
+        <div>
+          <h1>Newsletter</h1>
+          <input type="text" placeholder="Your Email Address" />
+          <p>
+            Enter your email and receive the latest news, updates, and special offers from us.
+          </p>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>© 2021 MyShowz. All rights reserved</p>
+       
+      </div>
+       <div className="textiz1">
+        <FaFacebookF className="textiz" />
+        <FaLinkedinIn  className="textiz"/>
+        <FaTwitter  className="textiz" />
+        <IoLogoGoogleplus  className="textiz"/>
+        </div>
 
 
-            <div className="row">
-              <div className="col">
-                  <h1 className="color1">Movies</h1>
-                  <p>
-                    <a className="foot" href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Videos
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      English Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Tailer
-                    </a>
-                    <br />
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Upcoming Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Contact Us
-                    </a>
-                  </p>
-                </div>
-
-                <div className="col">
-                   <h1 className="color1">Information</h1>
-                   
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Home
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                     About
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Tv Series
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Blog
-                    </a>
-                    <br />
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Login
-                    </a>
-                  </p>
-                  <p>
-                    <a className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Contact
-                    </a>
-                  </p>  
-                </div>
-
-                <div className="col">
-                   <h1 className="color1">Locations</h1>
-                   <div className="col">
-                  <p>
-                    <a className="foot" href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Videos
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      English Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Tailer
-                    </a>
-                    <br />
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Upcoming Movies
-                    </a>
-                  </p>
-                  <p>
-                    <a  className="foot" 
-                      href="https://myshowz.infinityfreeapp.com/?i=1#"
-                    >
-                      Contact Us
-                     
-                    </a>
-                  </p>
-
-                  
-                </div>
-
-                </div>
-
-
-                 <div className="col">
-                   <h1 className="color1">Newsletter</h1>
-                   <div className="col">
-                 <input className="input11" type="text" placeholder=" Your Email Addrress"/> 
-                 {/* <MdOutlineMailOutline style={{color:"white", fontSize:20,marginLeft:-30}}/> */}
-                 <br/><br/>
-                 <p className="color11">Enter your email and<br/> receive the latest <br/>news, updates and<br/> special offers from us.</p>
-                  
-                </div>
-
-                </div>     
-              </div>
-            </div>
-          </div>
-          
-                <div className="last">
-                    <p className="last1">© 2021 MyShowz. All rights reserved</p>
-                  
-                </div>
-      </section>
-    </>
+        
+    </section>
+    
   );
 }
 

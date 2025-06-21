@@ -8,26 +8,40 @@ function About() {
 <section>
    <div className='container'>
      <div className='row'>
-       <div className='col-lg-12'>
+       <div className='col col-sm-12'>
     <img className='pics' src='https://myshowz.infinityfreeapp.com/assets/images/banner1.jpg' alt='mahi' />
           
        </div>
      </div>
    </div>
+<div className='abouts'>
+<div className='col col-sm-6'>
+				 <b>My Showz Entertainment</b>
+                 <p className='p22'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam id quisquam <br/>posuere cubilia Curae; Nunc non risus in justo convallis feugiat.</p>
+                 <a href='https://myshowz.infinityfreeapp.com/about.html#'><button className='p11'><b>Read More</b> </button></a>
+                 
+			</div>
+			</div>
+
+
+</section>
+
+
+
+	
+		
+		
+		
+	
+
 
 
    
-    <h4 className='h4'><b>My Showz Entertainment</b></h4>
-    <p className='p22'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam id quisquam <br/> ipsam molestiae ad eius accusantium? Nulla dolorem perferendis inventore! <br/> posuere cubilia Curae; Nunc non risus in justo convallis feugiat.</p>
-    <a href='https://myshowz.infinityfreeapp.com/about.html#'><button className='p11'><b>Read More</b> </button></a>
+<br/><br/><br/><br/><br/><br/>
 
 
 
-</section><br/><br/><br/><br/><br/><br/>
-
-
-
-    <div class="w3l-counter-stats-info text-center">
+    {/* <div class="w3l-counter-stats-info text-center">
 				<div class="stats_left">
 					<div class="counter_grid">
 						<div class="icon_info">
@@ -64,7 +78,7 @@ function About() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 
 <br/><br/><br/><br/>
